@@ -1,7 +1,7 @@
 use education
 go
 select productid, name, city,
-ROW_Number () over (order by city,productid asc ) as 'Порядковий номер' 
+ROW_Number () over (order by city,productid asc) as 'Порядковий номер' 
 from Products
 go
 
